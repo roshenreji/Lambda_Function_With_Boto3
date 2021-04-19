@@ -5,7 +5,7 @@ Give these permissions
 * AmazonEC2FullAccess
 * AmazonSNSFullAccess
 
-### In CloudWatch navigate to 'Rules'
+### Step 1: In CloudWatch navigate to 'Rules'
 Select: 
 * Service Name: EC2
 * Event Type: EC2 Instance State-change Notification
@@ -31,7 +31,7 @@ Make Note of the Sample event json file
 }
 ````
 
-### Create a file named 'lambda_function.py' in VS Code 
+### Step 2: Create a file named 'lambda_function.py' in VS Code 
 ````
 import json
 import boto3
@@ -83,7 +83,7 @@ def lambda_handler(event, context):
     }
 ````
 
-### Go in to AWS Management Consolse and choose "Lambda"
+### Step 3: Go in to AWS Management Consolse and choose "Lambda"
 ##### Create a new function and upload this file "lambda_function.py" as a zip file
 ##### Click on "Configure test event" and create a template and event named "test1" and copy the json file which we got from cloudwatch and click save
 ##### Click Test to see everything is working fine
@@ -96,13 +96,13 @@ Response
 }
 ````
 
-### Configure SNS from AWS Management Console
+### Step 4: Configure SNS from AWS Management Console
 ##### Create topic 
 ##### Create a Subscription
 * Choose Protocol as "Email"
 * Give your email at the Endpoint
 
-### Go into CloudWatch and Click on Rules 
+### Step 5: Go into CloudWatch and Click on Rules 
  Select: 
 * Service Name: EC2
 * Event Type: EC2 Instance State-change Notification
