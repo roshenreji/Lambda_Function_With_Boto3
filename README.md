@@ -99,8 +99,8 @@ Response
 ### Configure SNS from AWS Management Console
 ##### Create topic 
 ##### Create a Subscription
-###### Choose Protocol as "Email"
-###### Give your email at the Endpoint
+* Choose Protocol as "Email"
+* Give your email at the Endpoint
 
 ### Go into CloudWatch and Click on Rules 
  Select: 
