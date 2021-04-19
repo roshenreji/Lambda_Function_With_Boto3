@@ -1,5 +1,5 @@
 # Creating a Lambda Function Using Boto3 to check for tags in EC2 Instances
-### Step 1: Create a Role in IAM using AWS
+### Step 1: Create a Role in IAM using AWS management Console
 
 Give these permissions
 * AmazonEC2FullAccess
